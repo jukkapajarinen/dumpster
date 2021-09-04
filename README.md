@@ -7,6 +7,7 @@ My useful snippets and cool small programs. These used to be Gists, but I find i
 - [ChristmasGreeter2020](./ChristmasGreeter2020/ChristmasGreeter2020.js) 🎄 (X-Mas greeting program for 2020)
 - [AzureDockerCompose](./AzureDockerCompose/main.tf) 💠 (Azure docker-compose Terraform configuration)
 - [AzureWPKubernetes](./AzureWPKubernetes/main.tf) 💠 (Azure WordPress K8s Terraform configuration)
+- [Bootstrap5KitchenSink](./Bootstrap5KitchenSink/index.html) 🎨 (Kitchen Sink to showcase BS5 components)
 
 ## Author
 
