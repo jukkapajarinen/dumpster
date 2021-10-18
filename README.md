@@ -8,6 +8,7 @@ My useful snippets and cool small programs. These used to be Gists, but I find i
 - [AzureDockerCompose](./AzureDockerCompose/main.tf) 💠 (Azure docker-compose Terraform configuration)
 - [AzureWPKubernetes](./AzureWPKubernetes/main.tf) 💠 (Azure WordPress K8s Terraform configuration)
 - [Bootstrap5KitchenSink](./Bootstrap5KitchenSink/index.html) 🎨 (Kitchen Sink to showcase BS5 components)
+- [MiTempHumiditySensorV1](./MiTempHumiditySensorV1/getMiData.sh) 🌡️ (Bash script to read data from Mi Temp/Humid V1 Sensor)
 
 ## Author
 
