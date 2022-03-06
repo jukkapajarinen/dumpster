@@ -13,6 +13,7 @@ My useful snippets, templates and cool small programs. Some of these used to be 
 - [Drupal docker-compose](./DrupalDockerCompose) 💧 Drupal docker-compose starter
 - [WordPress docker-compose](./WordpressDockerCompose) 🕸️  WordPress docker-compose starter
 - [WordPress Kubernetes](./WordpressKubernetes) 🕸️  WordPress Kubernetes starter
+- [Weatherduino](./Weatherduino) 🌦️  Basic Arduino Weather Station
 
 ## Author
 
