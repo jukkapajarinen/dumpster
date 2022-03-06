@@ -1,0 +1,13 @@
+# OS files
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# WordPress
+plugins/*
+!plugins/custom/
+themes/*
+!themes/custom/
+
+# Other
+node_modules/

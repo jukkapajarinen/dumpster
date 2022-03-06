@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: my-isolated-ns
+  name: wp-wordpress-dpl
+spec:
+  replicas: 1
+  selector:
+    matchLabels: 
+      app: wp-wordpress
+  template:
+    metadata: 
+      labels:
+        app: wp-wordpress
+    spec:
+      containers:
+        - name: wordpress
+          image: custom-wordpress
+          imagePullPolicy: Never
+          env:
+            - name: WORDPRESS_DB_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: wp-configurations
+                  key: dbHost
+            - name: WORDPRESS_DB_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: wp-configurations
+                  key: dbName
+            - name: WORDPRESS_DB_USER
+              valueFrom:
+                configMapKeyRef:
+                  name: wp-configurations
+                  key: dbUser
+            - name: WORDPRESS_DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: wp-secrets
+                  key: dbPassword
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: wp-wordpress-vol
+              mountPath: /var/www/html
+          resources:
+            requests: 
+              cpu: 500m
+              memory: 256Mi
+      volumes:
+        - name: wp-wordpress-vol
+          persistentVolumeClaim:
+            claimName: wp-wordpress-pvc

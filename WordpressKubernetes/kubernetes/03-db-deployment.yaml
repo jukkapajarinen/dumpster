@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: my-isolated-ns
+  name: wp-mariadb-dpl
+spec:
+  replicas: 1
+  selector:
+    matchLabels: 
+      app: wp-mariadb
+  template:
+    metadata: 
+      labels:
+        app: wp-mariadb
+    spec:
+      containers:
+        - name: mariadb
+          image: mariadb:10.5
+          env:
+            - name: MYSQL_DATABASE
+              valueFrom:
+                configMapKeyRef:
+                  name: wp-configurations
+                  key: dbName
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: wp-secrets
+                  key: dbPassword
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: wp-secrets
+                  key: dbPassword
+            - name: MYSQL_USER
+              valueFrom:
+                configMapKeyRef:
+                  name: wp-configurations
+                  key: dbUser
+          ports:
+            - containerPort: 3306
+          volumeMounts:
+            - name: wp-mariadb-vol
+              mountPath: /var/lib/mariadb
+          resources:
+            requests: 
+              cpu: 500m
+              memory: 256Mi
+      volumes:
+        - name: wp-mariadb-vol
+          persistentVolumeClaim:
+            claimName: wp-mariadb-pvc

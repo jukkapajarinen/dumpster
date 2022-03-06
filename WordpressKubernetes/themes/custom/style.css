@@ -1,0 +1,11 @@
+/*
+Theme Name: Custom Theme
+Theme URI: https://github.com/jukkapajarinen/wordpress-kubernetes
+Author: Jukka Pajarinen
+Author URI: https://www.jukkapajarinen.com
+Description: This is just a base to start theme development.
+Version: 0.1
+License: MIT
+License URI: https://github.com/jukkapajarinen/wordpress-kubernetes/blob/master/LICENSE.md
+*/
+h1 { color: #334da3; }

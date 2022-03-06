@@ -1,0 +1,40 @@
+# apiVersion: storage.k8s.io/v1
+# kind: StorageClass
+# metadata:
+#   name: wp-azure-disk
+# provisioner: kubernetes.io/azure-disk
+# reclaimPolicy: Retain
+# volumeBindingMode: WaitForFirstConsumer
+# parameters:
+#   storageaccounttype: Standard_LRS
+#   kind: Managed
+# ---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  namespace: my-isolated-ns
+  name: wp-mariadb-pvc
+  labels:
+    app: wp-mariadb
+spec:
+  accessModes:
+    - ReadWriteOnce
+  # storageClassName: wp-azure-disk
+  resources:
+    requests:
+      storage: 2Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  namespace: my-isolated-ns
+  name: wp-wordpress-pvc
+  labels:
+    app: wp-wordpress
+spec:
+  accessModes:
+    - ReadWriteOnce
+  # storageClassName: wp-azure-disk
+  resources:
+    requests:
+      storage: 3Gi

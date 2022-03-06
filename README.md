@@ -1,6 +1,6 @@
 # Jukka's snippets 📎
 
-My useful snippets and cool small programs. These used to be Gists, but I find it easier to manage them in Git repo.
+My useful snippets, templates and cool small programs. Some of these used to be Gists, but it is easier to manage them in a repo.
 
 - [GSheetTo2DArray](./GSheetTo2DArray/GSheetTo2DArray.js) 📊 (Transform Google Sheet into JavaScript array)
 - [GetFreeSpringerEBooks](./GetFreeSpringerEBooks/GetFreeSpringerEBooks.sh) 📚 (Free Springer E-Books during COVID-19)
@@ -9,6 +9,10 @@ My useful snippets and cool small programs. These used to be Gists, but I find i
 - [AzureWPKubernetes](./AzureWPKubernetes/main.tf) 💠 (Azure WordPress K8s Terraform configuration)
 - [Bootstrap5KitchenSink](./Bootstrap5KitchenSink/index.html) 🎨 (Kitchen Sink to showcase BS5 components)
 - [MiTempHumiditySensorV1](./MiTempHumiditySensorV1/getMiData.sh) 🌡️ (Bash script to read data from Mi Temp/Humid V1 Sensor)
+- [Gulp static website](./GulpStaticWebsite) 🥤 Gulp static website starter
+- [Drupal docker-compose](./DrupalDockerCompose) 💧 Drupal docker-compose starter
+- [WordPress docker-compose](./WordpressDockerCompose) 🕸️  WordPress docker-compose starter
+- [WordPress Kubernetes](./WordpressKubernetes) 🕸️  WordPress Kubernetes starter
 
 ## Author
 

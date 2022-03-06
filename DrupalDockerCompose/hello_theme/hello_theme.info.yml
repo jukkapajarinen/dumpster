@@ -1,0 +1,11 @@
+name: Hello Theme
+type: theme
+base theme: false
+description: This is just a base to start theme development.
+package: Custom
+version: 0.0.1
+core_version_requirement: 9.x
+logo: build/favicon.png
+
+regions:
+  content: "Main Content"

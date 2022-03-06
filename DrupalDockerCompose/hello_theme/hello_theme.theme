@@ -1,0 +1,8 @@
+<?php
+/**********************************************************************/
+/* Preprocess hook for html attributes
+/**********************************************************************/
+function hello__theme_preprocess_html(&$variables) {
+  $variables["attributes"]["class"][] = "hello-body";
+}
+?>

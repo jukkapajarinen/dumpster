@@ -1,0 +1,6 @@
+name: Hello Module
+description: This is just a base to start module development.
+package: Custom
+type: module
+version: 0.0.1
+core_version_requirement: 9.x
