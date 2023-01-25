@@ -1,0 +1,12 @@
+{
+  "name": "Hello ChatGPT",
+  "description": "A simple 'Hello World' extension for Gnome",
+  "version": "1.0",
+  "uuid": "hello-gnome-extension@jukkapajarinen.com",
+  "shell-version": [
+    "3.36",
+    "40",
+    "41",
+    "42"
+  ]
+}
