@@ -14,6 +14,8 @@ My useful snippets, templates and cool small programs. Some of these used to be 
 - [WordPress docker-compose](./WordpressDockerCompose) 🕸️  WordPress docker-compose starter
 - [WordPress Kubernetes](./WordpressKubernetes) 🕸️  WordPress Kubernetes starter
 - [Weatherduino](./Weatherduino) 🌦️  Basic Arduino Weather Station
+Hello Gnome Extension starter
+- [HelloGnomeExtension](./HelloGnomeExtension) 🏗️  Basic Gnome Extension starter
 
 ## Author
 
@@ -21,7 +23,7 @@ My useful snippets, templates and cool small programs. Some of these used to be 
 
 ## [License](LICENSE.md)
 
-Copyright (c) 2021 Jukka Pajarinen
+Copyright (c) 2023 Jukka Pajarinen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
