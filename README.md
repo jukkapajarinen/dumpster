@@ -9,6 +9,7 @@ My useful snippets, templates and cool small programs. Some of these used to be 
 - [AzureWPKubernetes](./AzureWPKubernetes/main.tf) 💠 (Azure WordPress K8s Terraform configuration)
 - [Bootstrap5KitchenSink](./Bootstrap5KitchenSink/index.html) 🎨 (Kitchen Sink to showcase BS5 components)
 - [MiTempHumiditySensorV1](./MiTempHumiditySensorV1/getMiData.sh) 🌡️ (Bash script to read data from Mi Temp/Humid V1 Sensor)
+- [MiTempHumiditySensorV2](./MiTempHumiditySensorV2/mi-temperature.js) 🌡️ (Node.js script to read data from Mi Temp/Humid V2 Sensor)
 - [Gulp static website](./GulpStaticWebsite) 🥤 Gulp static website starter
 - [Drupal docker-compose](./DrupalDockerCompose) 💧 Drupal docker-compose starter
 - [WordPress docker-compose](./WordpressDockerCompose) 🕸️  WordPress docker-compose starter
