@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Taskman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <h1>Taskman REST API</h1>
+  <ul>
+    <li>
+      POST /api/register
+      <ul>
+        <li>auth type: none</li>
+        <li>req fields: username, password, password2, email</li>
+      </ul>
+    </li>
+    <li>
+      POST /api/login
+      <ul>
+        <li>auth type: none</li>
+        <li>req fields: username, password</li>
+      </ul>
+    </li>
+    <li>
+      POST /api/renew
+      <ul>
+        <li>auth type: Bearer token (jwt)</li>
+        <li>req fields: none</li>
+      </ul>
+    </li>
+    <li>
+      GET /api/users/current
+      <ul>
+        <li>auth type: Bearer token (jwt)</li>
+        <li>req fields: none</li>
+      </ul>
+    </li>
+    <li>
+      PUT /api/users/:id
+      <ul>
+        <li>auth type: Bearer token (jwt)</li>
+        <li>req fields: username, password, password2, email</li>
+      </ul>
+    </li>
+    <li>
+      DEL /api/users/:id
+      <ul>
+        <li>auth type: Bearer token (jwt)</li>
+        <li>req fields: none</li>
+      </ul>
+    </li>
+    <li>
+      POST /api/lists
+      <ul>
+        <li>auth type: Bearer token (jwt)</li>
+        <li>req fields: name, desc, time, priority</li>
+      </ul>
+    </li>
+    <li>
+      GET /api/lists
+      <ul>
+        <li>auth type: Bearer token (jwt)</li>
+        <li>req fields: none</li>
+      </ul>
+    </li>
+    <li>
+      PUT /api/lists/:id
+      <ul>
+        <li>auth type: Bearer token (jwt)</li>
+        <li>req: name, desc, time, priority</li>
+      </ul>
+    </li>
+    <li>
+      DEL /api/lists/:id
+      <ul>
+        <li>auth type: Bearer token (jwt)</li>
+        <li>req: none</li>
+      </ul>
+    </li>
+    <li>
+      POST /api/tasks
+      <ul>
+        <li>auth type: Bearer token (jwt)</li>
+        <li>req: listid, name, desc, time, priority, state</li>
+      </ul>
+    </li>
+    <li>
+      GET /api/tasks
+      <ul>
+        <li>auth type: Bearer token (jwt)</li>
+        <li>req fields: none</li>
+      </ul>
+    </li>
+    <li>
+      GET /api/tasks/:id
+      <ul>
+        <li>auth type: Bearer token (jwt)</li>
+        <li>req fields: none</li>
+      </ul>
+    </li>
+    <li>
+      PUT /api/tasks/:id
+      <ul>
+        <li>auth type: Bearer token (jwt)</li>
+        <li>req: listid, name, desc, time, priority, state</li>
+      </ul>
+    </li>
+    <li>
+      DEL /api/tasks/:id
+      <ul>
+        <li>auth type: Bearer token (jwt)</li>
+        <li>req: none</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+
+</html>

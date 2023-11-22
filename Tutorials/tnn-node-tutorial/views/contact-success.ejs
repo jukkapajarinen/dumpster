@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TheNetNinjaNodeTutotirla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/styles.css">
+
+</head>
+<body>
+  <% include nav.ejs %>
+  <h1>Contact page</h1>
+  <p>Thanks for contacting us!</p>
+  <p>You contacted: <%= data.who %> in the <%= data.dept %>.</p>
+  <p>we will contact you at <%= data.email %></p>
+</body>
+</html>

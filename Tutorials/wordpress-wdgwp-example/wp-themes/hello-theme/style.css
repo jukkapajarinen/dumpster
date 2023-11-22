@@ -1,0 +1,11 @@
+/*
+Theme Name: Hello Theme
+Theme URI: https://github.com/jukkapajarinen/wordpress-docker-starter
+Author: Jukka Pajarinen
+Author URI: https://www.jukkapajarinen.com
+Description: This is just a base to start theme development.
+Version: 0.1
+License: MIT
+License URI: https://github.com/jukkapajarinen/wordpress-docker-starter/blob/master/LICENSE.md
+*/
+h1 { color: #050505; }

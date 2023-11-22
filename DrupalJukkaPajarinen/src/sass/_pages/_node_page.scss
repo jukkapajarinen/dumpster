@@ -1,0 +1,41 @@
+body.node-page {
+  #jp-main-content {
+    padding: 3.375rem 0;
+
+    .container {
+      #jp-page-title {
+        .breadcrumb {
+          background: none;
+          padding: 0;
+  
+        .breadcrumb-item i.fa-chevron-right {
+          padding: 0 .5rem;
+  
+          &:last-child {
+            display: none;
+          }
+        }
+        }
+  
+        h1 {
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      #jp-page-content {
+        margin-bottom: 1.5rem;
+      }
+  
+      #jp-page-sidebar {
+        .sidebar-item {
+          background-color: #ffffff;
+          padding: 3rem;
+        }
+  
+        .sidebar-extra {
+          padding: 2rem 3rem;
+        }
+      }
+    }
+  }
+}

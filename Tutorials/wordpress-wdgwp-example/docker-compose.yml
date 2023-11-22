@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  wordpress:
+    image: wordpress:5.5.1-php7.2-apache
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: mariadb:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - ./wp-themes:/var/www/html/wp-content/themes
+      - ./wp-plugins:/var/www/html/wp-content/plugins
+    depends_on:
+      - mariadb
+
+  mariadb:
+    image: mariadb:10.3
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: wordpress
+
+  phpmyadmin:
+    image: phpmyadmin:5.0.2-apache
+    restart: always
+    ports:
+      - 8000:80
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: wordpress
+    depends_on:
+      - mariadb

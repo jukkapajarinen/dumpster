@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TheNetNinjaNodeTutotirla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/styles.css">
+
+</head>
+<body>
+  <% include nav.ejs %>
+  <h1>Profile of <%= person %></h1>
+  <p><b>Age: </b><%= data.age %></p>
+  <p><b>job: </b><%= data.job %></p>
+  <h2>Hobbies</h2>
+  <ul>
+    <% data.hobbies.forEach(function(item){ %>
+      <li><%= item %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>

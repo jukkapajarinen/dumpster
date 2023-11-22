@@ -1,0 +1,44 @@
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #E45237;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+$primary: $red;
+$success: $green;
+$info: $blue;
+$warning: $yellow;
+$danger: $pink;
+
+$body-bg: #f7f7f7;
+$text-color: #5d5d5d;
+$link-color: $red;
+$link-decoration: underline;
+$link-hover-decoration: underline;
+h1 {
+  color: $red !important;
+}
+$headings-color: #333333;
+
+$font-size-base: 1rem;
+$font-size-h1: 4rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.75rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1rem;
+$font-size-h6: 1rem;
+
+p.lead {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+$font-family-sans-serif: "Titillium-Regular", sans-serif;
+$font-family-base: "Titillium-Regular", sans-serif;
+$headings-font-family: "Montserrat-Bold", sans-serif;

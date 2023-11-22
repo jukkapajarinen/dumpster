@@ -1,0 +1,16 @@
+<section class="section has-text-centered-mobile" id="projects-section">
+  <div class="container">
+    <h2 class="title">{{ title }}</h2>
+    <h3 class="subtitle">{{ subTitle }}</h3>
+    {{#each items}}
+    <a class="columns" href="{{ this.link }}">
+      <div class="column">{{ ../project }} {{ this.index }}: {{ this.name }}</div>
+      <div class="column tags has-text-right has-text-centered-mobile">
+        {{#each this.tags}}
+        <span class="tag is-light">{{ this }}</span>
+        {{/each}}
+      </div>
+    </a>
+    {{/each}}
+  </div>
+</section>

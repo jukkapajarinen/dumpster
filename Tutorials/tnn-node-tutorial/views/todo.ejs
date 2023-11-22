@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Todo list</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="/assets/styles.css" />
+  <script src="/assets/ajax.js"></script>
+</head>
+<body>
+  <div id="todo-list">
+    <img id="logo" src="/assets/rocket.png" alt="Todo list logo">
+    <h1 id="title">TODO list</h1>
+    <form id="newitemform">
+      <input type="text" id="newitem" placeholder="Add new item.." required autofocus>
+    </form>
+    <ul id="content">
+      <% for(var i = 0; i < todos.length ; i++) { %>
+        <li class="item" id="<%= i %>"><%= todos[i].item %></li>
+      <% } %>
+    </ul>
+  </div>
+</body>
+</html>

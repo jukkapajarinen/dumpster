@@ -1,0 +1,46 @@
+@include media-breakpoint-down(xs) {
+  nav.navbar {
+    background: linear-gradient(135deg,#D43835, #E45237);
+
+    .container {
+      .navbar-brand .brand-first {
+        color: #f0f0f0 !important;
+      }
+  
+      .navbar-nav .nav-item.active > .nav-link {
+        color: #f0f0f0 !important;
+      }
+  
+      .custom-select {
+        color: #FF9C90;
+        background-color: #E05D4E;
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z' fill='%23FF9C90'/%3E%3C/svg%3E");
+      }
+
+      #jp-navbar-first-collapse {
+        padding-top: 2rem;
+      }
+
+      #jp-navbar-second-collapse {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  body.front-page {
+    #jp-main-content {
+      #jp-hero-section,
+      #jp-services-section {
+        background: linear-gradient(135deg,#ffffff, #f0f0f0);
+      }
+
+      #jp-contact-section p.w-50.mx-auto {
+        width: 80% !important;
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+  }
+}

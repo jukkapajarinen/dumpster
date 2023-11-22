@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  mariadb:
+    image: "docker.io/bitnami/mariadb:10.5-debian-10"
+    environment:
+      - MARIADB_PASSWORD=changethispswd
+      - MARIADB_ROOT_PASSWORD=changethispswd
+      - MARIADB_USER=bn_drupal
+      - MARIADB_DATABASE=bitnami_drupal
+    volumes:
+      - "/bitnami/mariadb"
+
+  drupal:
+    image: "docker.io/bitnami/drupal:9-debian-10"
+    user: root
+    ports:
+      - "8081:8080"
+      - "8443:8443"
+    environment:
+      - DRUPAL_DATABASE_HOST=mariadb
+      - DRUPAL_DATABASE_PORT_NUMBER=3306
+      - DRUPAL_DATABASE_USER=bn_drupal
+      - DRUPAL_DATABASE_NAME=bitnami_drupal
+      - DRUPAL_DATABASE_PASSWORD=changethispswd
+      - DRUPAL_USERNAME=admin
+      - DRUPAL_PASSWORD=changethispswd
+    volumes:
+      - "/bitnami/drupal"
+      - "./jukkapajarinen:/opt/jukkapajarinen"
+    depends_on:
+      - mariadb
+
+  phpmyadmin:
+    image: phpmyadmin:5.0.2-apache
+    restart: always
+    ports:
+      - 8888:80
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+    depends_on:
+      - mariadb

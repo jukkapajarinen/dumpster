@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TheNetNinjaNodeTutotirla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/styles.css">
+
+</head>
+<body>
+  <% include nav.ejs %>
+  <h1>Contact page</h1>
+  <p>contact us</p>
+
+  <form method="POST" action="/contact">
+    <input type="text" name="who" value="<%= query.name %>">
+    <input type="text" name="dept" value="<%= query.dept %>">
+    <input type="email" name="email">
+    <input type="submit" value="submit">
+  </form>
+</body>
+</html>

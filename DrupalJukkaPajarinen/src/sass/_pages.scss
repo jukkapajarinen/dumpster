@@ -1,0 +1,117 @@
+.custom-select {
+  border: 0;
+  color: #5d5d5d;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z' fill='%235d5d5d'/%3E%3C/svg%3E");
+  background-color: #ededed;
+  background-size: .5em;
+  background-position: calc(100% - .75em) center;
+  background-repeat: no-repeat;
+}
+
+.icon-link {
+  padding: .25rem;
+}
+
+a {
+  i.fa-external-link-alt {
+    padding-left: .5rem;
+    opacity: .5;
+    font-size: .8rem;
+  }
+}
+
+nav.navbar {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(135deg,#f0f0f0, #ffffff);
+
+  .container {
+    padding: 0;
+
+    .navbar-brand {
+      font-family: $headings-font-family !important;
+      text-decoration: none !important;
+
+      .brand-first {
+        color: $primary;
+      }
+
+      .brand-second {
+        color: #333333;
+      }
+
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+
+    .navbar-toggler {
+      border: 0;
+    }
+
+    .navbar-nav .nav-item {
+      & > .nav-link {
+        color: #333333;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &.active > .nav-link {
+        color: $primary !important;
+      }
+    }
+  }
+}
+
+footer {
+  background: linear-gradient(135deg,#D43835, #E45237);
+
+  .container {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    color: #FF9C90;
+
+    .nav {
+      margin-left: -1rem;
+      margin-right: -1rem;
+
+      .nav-item {
+        .nav-link {
+          color: #FF9C90;
+        }
+
+        &.active .nav-link {
+          color: #ffffff;
+        }
+        
+        &:hover .nav-link {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .custom-select {
+      color: #FF9C90;
+      background-color: #E05D4E;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z' fill='%23FF9C90'/%3E%3C/svg%3E");
+    }
+
+    hr {
+      border-color: #E05D4E;
+      margin: 2.125rem 0;
+    }
+
+    .icon-link {
+      color: #FF9C90;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}

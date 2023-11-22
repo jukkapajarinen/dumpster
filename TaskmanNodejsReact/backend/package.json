@@ -1,0 +1,28 @@
+{
+  "name": "taskman-backend",
+  "version": "0.3.0",
+  "description": "Task manager for todo lists etc",
+  "main": "server.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://jukkapajarinen@bitbucket.org/jukkapajarinen/taskman-backend.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mariadb",
+    "react"
+  ],
+  "author": "Jukka Pajarinen",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "jsonwebtoken": "^8.3.0",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0"
+  }
+}

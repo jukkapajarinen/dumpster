@@ -1,0 +1,14 @@
+@import 'bulmaswatch/yeti/_variables.scss';
+@import 'bulma/bulma.sass';
+@import 'bulmaswatch/yeti/_overrides.scss';
+
+// Customizations
+.tags .tag { margin-left: .5rem; margin-right: 0 !important; }
+@media screen and (max-width: 768px) { .has-text-right.has-text-centered-mobile, .has-text-left.has-text-centered-mobile { text-align: center !important; } }
+#some-section { padding: 0; }
+#some-section .level .level-item { margin: 0; padding: 1.5rem; }
+#some-section #facebook { background-color: #3b5998; }
+#some-section #twitter { background-color: #28aae1; }
+#some-section #linkedin { background-color: #007bb5; }
+#some-section #bitbucket { background-color: #2684ff; }
+#some-section #googleplay { background-color: #000000; }

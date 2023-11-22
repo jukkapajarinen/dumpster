@@ -1,0 +1,32 @@
+<div id="jp-user-wrapper">
+  <div class="card">
+    {% if not logged_in %}
+      <div class="card-body">
+        <div class="card-title">
+          <h2>Kirjaudu sisään.</h2>
+        </div>
+        <form action="/user/login" method="post" autocomplete="off">
+          <div class="form-group">
+            <input type="text" class="form-control" name="name" id="name"required  placeholder="Syötä nimi tähän...">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" name="pass" id="pass" required placeholder="Syötä salasana tähän...">
+          </div>
+          <input type="hidden" name="form_id" value="user_login_form" />
+          <input type="submit" name="op" value="Jatka" class="btn btn-primary btn-block">
+        </form>
+      </div>
+    {% else %}
+      <div class="card-body">
+        <div class="card-title">
+          <h2>Olet kirjautunut.</h2>
+        </div>
+        <ul>
+          <li><a href="/admin">Mene hallintapaneeliin</a></li>
+          <li><a href="/">Mene etusivulle</a></li>
+          <li><a href="/user/logout">Kirjaudu ulos</a></li>
+        </ul>
+      </div>
+    {% endif %}
+  </div>
+</div>

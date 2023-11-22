@@ -1,0 +1,38 @@
+{
+  "name": "githubpage-bulma-lander",
+  "version": "1.0.0",
+  "description": "@jukkapajarinen",
+  "main": "build/index.html",
+  "scripts": {
+    "start": "gulp serve",
+    "build": "gulp build",
+    "clean": "gulp clean"
+  },
+  "author": "Jukka Pajarinen",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssimport": "^7.0.0",
+    "gulp-load-plugins": "^2.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-util": "^3.0.8",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.6"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "animate.css": "^3.7.2",
+    "bulma": "^0.8.0",
+    "jquery": "^3.4.1",
+    "jquery-aniview": "^1.0.2",
+    "particlesjs": "^2.2.3"
+  }
+}

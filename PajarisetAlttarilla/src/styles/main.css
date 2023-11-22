@@ -1,0 +1,337 @@
+/**************************************************/
+/* PostCSS imports */
+/**************************************************/
+@import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+/**************************************************/
+/* Fonts and resets */
+/**************************************************/
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  src: url("./fonts/fa-solid-900.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Titillium-Regular";
+  src: url("./fonts/Titillium-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "Titillium-Bold";
+  src: url("./fonts/Titillium-Bold.otf") format("truetype");
+}
+@font-face {
+  font-family: "GreatVibes-Regular";
+  src: url("./fonts/GreatVibes-Regular.otf") format("truetype");
+}
+
+/**************************************************/
+/* General (24px = 1rem) */
+/**************************************************/
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 18px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #ffffff;
+}
+* {
+  font-family: "Titillium-Regular", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: .05rem;
+  color: #6c6c6c;
+}
+a, a * {
+  color: #19b8ff;
+  opacity: 1;
+}
+a:hover {
+  opacity: .8;
+}
+
+/**************************************************/
+/* Typography */
+/**************************************************/
+p {
+  font-family: "Titillium-Regular", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: .05rem;
+  color: #6c6c6c;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-family: "GreatVibes-Regular", sans-serif;
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: .5rem;
+  color: #6c6c6c;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-family: "GreatVibes-Regular", sans-serif;
+  font-size: 3rem;
+  line-height: 3rem;
+  letter-spacing: .5rem;
+  color: #6c6c6c;
+  margin-bottom: 2rem;
+}
+h3 {
+  font-family: "GreatVibes-Regular", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: .5rem;
+  color: #6c6c6c;
+  margin-bottom: 2rem;
+}
+h4 {
+  font-family: "Titillium-Bold", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: .05rem;
+  color: #6c6c6c;
+  margin-bottom: 2rem;
+}
+
+h5 {
+  font-family: "Titillium-Regular", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: .05rem;
+  color: #6c6c6c;
+  margin-bottom: 2rem;
+}
+h6 {
+  font-family: "Titillium-Regular", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: .05rem;
+  color: #6c6c6c;
+  margin-bottom: 2rem;
+}
+
+/**************************************************/
+/* Bootstrap styles */
+/**************************************************/
+.btn {
+  background: #ebdfb7;
+  background: linear-gradient(135deg, #fdf0c5, #ebdfb7);
+  border-color: #ebdfb7;
+  color: #6c6c6c;
+}
+.btn.focus,
+.btn:focus,
+.btn:hover {
+  background: #f0da92;
+  background: linear-gradient(135deg, #ecd99b, #f0da92);
+  border-color: #f0da92;
+  color: #6c6c6c;
+}
+
+/**************************************************/
+/* Login page styles */
+/**************************************************/
+body#pa-login-page {
+  background: #f8f8f8;
+  background: -moz-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr="#ffffff", endColorstr="##f8f8f8", GradientType=0);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+body#pa-login-page form#pa-login-form {
+  width: 100%;
+  max-width: 16rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+body#pa-login-page form#pa-login-form #pa-login-title {
+  margin-bottom: 2rem;
+}
+body#pa-login-page form#pa-login-form .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+}
+body#pa-login-page form#pa-login-form .form-control:focus {
+  z-index: 2;
+}
+body#pa-login-page form#pa-login-form input[type="password"] {
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+/**************************************************/
+/* Main page styles */
+/**************************************************/
+body#pa-main-page #pa-navbar.navbar {
+  padding: 0 1rem;
+  background: #ebdfb7;
+  background: linear-gradient(135deg, #fdf0c5, #ebdfb7);
+}
+body#pa-main-page #pa-navbar.navbar .navbar-brand,
+body#pa-main-page #pa-navbar.navbar .nav-link {
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+body#pa-main-page #pa-main-content .pa-icon-paragraphs p.pa-icon-paragraph:last-child {
+  margin-bottom: 0;
+}
+body#pa-main-page #pa-main-content .pa-icon-paragraphs .pa-icon-paragraph {
+  display: flex;
+  justify-content: flex-start;
+}
+body#pa-main-page #pa-main-content .pa-icon-paragraphs .pa-icon-paragraph > .pa-icon {
+  margin-right: 2rem;
+  display: block;
+}
+body#pa-main-page #pa-main-content .pa-icon-paragraphs .pa-icon-paragraph > .pa-content {
+  flex-grow: 1;
+  display: block;
+}
+body#pa-main-page #pa-main-content #pa-hero-section.jumbotron {
+  background-color: #f8f8f8;
+  background: url('/assets/images/background.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-radius: 0;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+body#pa-main-page #pa-main-content #pa-hero-section.jumbotron #pa-hero-overlay {
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+body#pa-main-page #pa-main-content #pa-hero-section.jumbotron #pa-hero-title {
+  font-family: "GreatVibes-Regular", sans-serif;
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: .5rem;
+  color: #6c6c6c;
+  margin-bottom: 1rem;
+}
+body#pa-main-page #pa-main-content #pa-hero-section.jumbotron #pa-hero-subtitle {
+  font-family: "GreatVibes-Regular", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  letter-spacing: .25rem;
+  color: #6c6c6c;
+  margin-bottom: 4rem;
+}
+body#pa-main-page #pa-main-content #pa-hero-section.jumbotron #pa-hero-citation {
+  margin-bottom: 0;
+}
+body#pa-main-page #pa-main-content .pa-content-section {
+  background: #f8f8f8;
+  background: -moz-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr="#ffffff", endColorstr="##f8f8f8", GradientType=0);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+body#pa-main-page #pa-main-content .pa-content-section .pa-section-title {
+  margin-bottom: 3rem;
+}
+body#pa-main-page #pa-main-content .pa-content-section#pa-vihkiminen-section > .container > .row:first-child,
+body#pa-main-page #pa-main-content .pa-content-section#pa-haajuhla-section > .container > .row:first-child {
+  margin-bottom: 2rem;
+}
+body#pa-main-page #pa-main-content .pa-content-section#pa-lisatietoja-section p#pa-welcome,
+body#pa-main-page #pa-main-content .pa-content-section#pa-lisatietoja-section p#pa-welcome * {
+  margin-top: 6rem;
+  font-family: "GreatVibes-Regular", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: .333rem;
+  color: #6c6c6c;
+}
+body#pa-main-page #pa-main-content #pa-map-box {
+  filter: grayscale(.9);
+  opacity: .7;
+}
+body#pa-main-page #pa-main-content #pa-map-box iframe {
+  width: 100%;
+  height: 15rem;
+}
+body#pa-main-page #pa-footer {
+  background: #ebdfb7;
+  background: linear-gradient(135deg, #fdf0c5, #ebdfb7);
+}
+body#pa-main-page #pa-footer #pa-footer-content {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+}
+body#pa-main-page #pa-footer #pa-footer-content a,
+body#pa-main-page #pa-footer #pa-footer-content a *,
+body#pa-main-page #pa-footer #pa-footer-content a:hover {
+  color: #6c6c6c;
+}
+body#pa-main-page #pa-footer #pa-footer-content #pa-text-authors i.fas {
+  margin-right: 1rem;
+}
+
+/**************************************************/
+/* Responsive fixes */
+/**************************************************/
+@media only screen and (max-width: 979px) {
+  body#pa-main-page #pa-main-content #pa-hero-section.jumbotron #pa-hero-title {
+    font-size: 3rem;
+  }
+}
+@media only screen and  (max-width: 767px) {
+  body#pa-main-page #pa-navbar.navbar .navbar-toggler {
+    border: none;
+  }
+  body#pa-main-page #pa-navbar.navbar #pa-navbar-collapse.navbar-collapse {
+    border-top: 1px solid rgba(108, 108, 108, .1);
+  }
+  body#pa-main-page #pa-main-content #pa-hero-section.jumbotron #pa-hero-overlay {
+    display: block;
+    background: rgba(255, 255, 255, .7);
+    width: 100%;
+    height: 100%;
+  }
+  body#pa-main-page #pa-main-content .pa-content-section#pa-vihkiminen-section #pa-map-box,
+  body#pa-main-page #pa-main-content .pa-content-section#pa-haajuhla-section #pa-map-box {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 2100px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: 10rem; } }
+@media only screen and (max-width: 2000px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: 8rem; } }
+@media only screen and (max-width: 1900px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: 6rem; } }
+@media only screen and (max-width: 1800px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: 4rem; } }
+@media only screen and (max-width: 1700px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: 2rem; } }
+@media only screen and (max-width: 1600px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: 0; } }
+@media only screen and (max-width: 1500px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: -2rem; } }
+@media only screen and (max-width: 1400px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: -6rem; } }
+@media only screen and (max-width: 1300px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: -10rem; } }
+@media only screen and (max-width: 1200px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: -14rem; } }
+@media only screen and (max-width: 1100px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: -18rem; } }
+@media only screen and (max-width: 1000px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: -20rem; } }
+@media only screen and (max-width: 900px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: -22rem; } }
+@media only screen and (max-width: 800px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: -26rem; } }
+@media only screen and (max-width: 700px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: -30rem; } }
+@media only screen and (max-width: 600px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: -34rem; } }
+@media only screen and (max-width: 500px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: -38rem; } }
+@media only screen and (max-width: 400px) { body#pa-main-page #pa-main-content #pa-hero-section.jumbotron { background-position-x: -40rem; } }

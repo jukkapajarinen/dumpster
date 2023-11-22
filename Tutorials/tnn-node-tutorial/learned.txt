@@ -1,0 +1,21 @@
+node global object's stuff
+js function expressions
+node commonjs modules
+node eventEmitter
+node fs module (readFile, writeFile, x-sync)
+node http module
+node fs readStream, writeStream
+node readStream pipe
+node http text/html
+node http application/json
+npm install, init
+nodemon global module
+express module
+express http-methods and routes
+ejs template module
+express middleware static files
+express GET query-string
+express POST body-parser
+express mvc architecture
+express get post delete
+mongodb

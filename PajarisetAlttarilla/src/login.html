@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pajariset Alttarilla">
+    <meta name="keywords" content="Pajariset Alttarilla">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Jukka Pajarinen">
+    <title>Pajariset Alttarilla - Kati & Jukka 10.10.2020</title>
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/assets/build.css">
+    <script defer src="/assets/build.js" type="text/javascript"></script>
+  </head>
+  <body id="pa-login-page" class="d-flex justify-content-center align-items-center">
+    <main id="pa-main-content" class="flex-grow-1">
+      <form id="pa-login-form" class="text-center" action="auth" method="post">
+        <h1 id="pa-login-title" class="h1">Pajariset Alttarilla</h1>
+        <input id="pa-login-password" class="form-control" 
+          type="password" 
+          name="password" 
+          required 
+          placeholder="Syötä salasana.."
+          onfocus="this.placeholder=''"
+          onblur="this.placeholder='Syötä salasana..'">
+        <button id="pa-login-submit" class="btn btn-block" type="submit">Jatka</button>
+      </form>
+    </main>
+  </body>
+</html>

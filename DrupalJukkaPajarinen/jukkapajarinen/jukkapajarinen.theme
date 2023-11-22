@@ -1,0 +1,36 @@
+<?php
+/**********************************************************************/
+/* Preprocess hook for html attributes
+/**********************************************************************/
+function jukkapajarinen_preprocess_html(&$variables) {
+  // Node page is instance of node interface
+  $node = \Drupal::routeMatch()->getParameter("node");
+  if($node instanceof \Drupal\node\NodeInterface) {
+    $variables["attributes"]["class"][] = "node-page";
+  }
+
+  // Check for front and user routes
+  $routeName= \Drupal::routeMatch()->getRouteName();
+  if (strpos($routeName, "frontpage") !== false) {
+    $variables["attributes"]["class"][] = "front-page";
+  }
+  if (strpos($routeName, "user") !== false) {
+    $variables["attributes"]["class"][] = "user-page";
+  }
+  if (strpos($routeName, "404") !== false) {
+    $variables["attributes"]["class"][] = "node-page";
+  }
+}
+
+/**********************************************************************/
+/* Preprocess hook for breadcrumbs
+/**********************************************************************/
+function jukkapajarinen_preprocess_breadcrumb(&$variables) {
+  $request = \Drupal::request();
+  $route_match = \Drupal::routeMatch();
+  $page_title = \Drupal::service('title_resolver')->getTitle(
+    $request, $route_match->getRouteObject()
+  );
+  $variables['breadcrumb'][] = array('text' => $page_title);
+}
+?>

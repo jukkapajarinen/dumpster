@@ -1,26 +1,36 @@
-# Jukka's snippets 📎
+# Jukka's dumpster 🗑️
 
-My useful snippets, templates and cool small programs. Some of these used to be Gists, but it is easier to manage them in a repo.
+My useful snippets, old un-maintained projects, templates and cool small programs. Some of these have screenshots, feel free to explore!
 
-- [GSheetTo2DArray](./GSheetTo2DArray/GSheetTo2DArray.js) 📊 (Transform Google Sheet into JavaScript array)
-- [GetFreeSpringerEBooks](./GetFreeSpringerEBooks/GetFreeSpringerEBooks.sh) 📚 (Free Springer E-Books during COVID-19)
-- [ChristmasGreeter2020](./ChristmasGreeter2020/ChristmasGreeter2020.js) 🎄 (X-Mas greeting program for 2020)
+- [AwesomeUnixSetups](./AwesomeUnixSetups) 🐧  ASP.NET, Razor, EntityFramework and MariaDB based Web-application to compare UNIX setups.
 - [AzureDockerCompose](./AzureDockerCompose/main.tf) 💠 (Azure docker-compose Terraform configuration)
 - [AzureWPKubernetes](./AzureWPKubernetes/main.tf) 💠 (Azure WordPress K8s Terraform configuration)
+- [Bootstrap4Carousel](./Bootstrap4Carousel) 🎨  Full viewport Carousel template with Navbar.
 - [Bootstrap5KitchenSink](./Bootstrap5KitchenSink/index.html) 🎨 (Kitchen Sink to showcase BS5 components)
+- [ChristmasGreeter2020](./ChristmasGreeter2020/ChristmasGreeter2020.js) 🎄 (X-Mas greeting program for 2020)
+- [ColorpongLibGDX](./ColorpongLibGDX) 📱  LibGDX game for Android.
+- [Drupal docker-compose](./DrupalDockerCompose) 💧 Drupal docker-compose starter
+- [DrupalJukkaPajarinen](./DrupalJukkaPajarinen) 💧 My personal website and blog crafted with Drupal and Bitnami Drupal Docker Stack.
+- [ElectionGame](./ElectionGame) 🎲  Event-based card game created with Qt/C++ as a student project in TUT.
+- [Emoticons-ReactNative](./Emoticons-ReactNative) 📱  React-native application for Android.
+- [Freelancing](./Freelancing) 📜  My personal freelance gig descriptions.
+- [GetFreeSpringerEBooks](./GetFreeSpringerEBooks/GetFreeSpringerEBooks.sh) 📚 (Free Springer E-Books during COVID-19)
+- [GSheetTo2DArray](./GSheetTo2DArray/GSheetTo2DArray.js) 📊 (Transform Google Sheet into JavaScript array)
+- [Guides](./Guides) 📜  My personal guides for various things.
+- [Gulp static website](./GulpStaticWebsite) 🥤 Gulp static website starter
+- [GWSNodeMailer](./GWSNodeMailer) 🏗️  Google Workspace NodeMailer example
+- [HelloGnomeExtension](./HelloGnomeExtension) 🐧  Basic Gnome Extension starter
+- [HelloWebXR](./HelloWebXR) 🕶️  Hello WebXR starter
 - [MiTempHumiditySensorV1](./MiTempHumiditySensorV1/getMiData.sh) 🌡️ (Bash script to read data from Mi Temp/Humid V1 Sensor)
 - [MiTempHumiditySensorV2](./MiTempHumiditySensorV2/mi-temperature.js) 🌡️ (Node.js script to read data from Mi Temp/Humid V2 Sensor)
-- [Gulp static website](./GulpStaticWebsite) 🥤 Gulp static website starter
-- [Drupal docker-compose](./DrupalDockerCompose) 💧 Drupal docker-compose starter
+- [PajarisetAlttarilla](./PajarisetAlttarilla) 🌐  My Wedding webpage from 2020 using Node.js, Express, Gulp, Bootstrap and jQuery.
+- [PortfolioBulmaLander](./PortfolioBulmaLander) 🌐 My portfolio page from 2020 using Bulma, Gulp etc.
+- [PortfolioJqueryHbs](./PortfolioJqueryHbs) 🌐  My portfolio page from 2018 using WebPack, jQuery and handlebars.
+- [PortfolioReactJsx](./PortfolioReactJsx) 🌐  My portfolio page from 2018 using WebPack, React and JSX.
+- [Tutorials](./Tutorials) 📜 My personal follow-ups for various programming tutorials.
+- [Weatherduino](./Weatherduino) 🌦️  Basic Arduino Weather Station
 - [WordPress docker-compose](./WordpressDockerCompose) 🕸️  WordPress docker-compose starter
 - [WordPress Kubernetes](./WordpressKubernetes) 🕸️  WordPress Kubernetes starter
-- [Weatherduino](./Weatherduino) 🌦️  Basic Arduino Weather Station
-Hello Gnome Extension starter
-- [HelloGnomeExtension](./HelloGnomeExtension) 🏗️  Basic Gnome Extension starter
-Google Workspace NodeMailer example
-- [GWSNodeMailer](./GWSNodeMailer) 🏗️  Google Workspace NodeMailer example
-Hello WebXR starter
-- [HelloWebXR](./HelloWebXR) 🏗️  Basic WebXR starter
 
 ## Author
 

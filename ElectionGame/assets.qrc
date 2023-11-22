@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Assets/card_agent.png</file>
+        <file>Assets/card_influence1.png</file>
+        <file>Assets/card_influence2.png</file>
+        <file>Assets/card_influence3.png</file>
+        <file>Assets/card_influence4.png</file>
+        <file>Assets/carddeck_empty.png</file>
+        <file>Assets/carddeck.png</file>
+        <file>Assets/coin1.png</file>
+        <file>Assets/coin2.png</file>
+        <file>Assets/coin3.png</file>
+        <file>Assets/coin4.png</file>
+        <file>Assets/coin5.png</file>
+        <file>Assets/coin6.png</file>
+        <file>Assets/coin7.png</file>
+        <file>Assets/location1.png</file>
+        <file>Assets/location2.png</file>
+        <file>Assets/location3.png</file>
+        <file>Assets/location4.png</file>
+        <file>Assets/medal.png</file>
+    </qresource>
+</RCC>

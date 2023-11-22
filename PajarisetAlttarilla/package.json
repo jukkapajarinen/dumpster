@@ -1,0 +1,39 @@
+{
+  "name": "pajariset-alttarilla",
+  "version": "1.0.0",
+  "description": "pajarisetalttarilla",
+  "main": "build/index.html",
+  "scripts": {
+    "start": "node server/server.js",
+    "startDev": "gulp start",
+    "build": "gulp build",
+    "clean": "gulp clean"
+  },
+  "author": "Jukka Pajarinen",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "autoprefixer": "^9.8.4",
+    "babel-loader": "^8.1.0",
+    "bootstrap": "^4.5.0",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssimport": "^7.0.0",
+    "gulp-load-plugins": "^2.0.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-util": "^3.0.8",
+    "jquery": "^3.5.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.43.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1"
+  }
+}

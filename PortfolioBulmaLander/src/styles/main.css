@@ -1,0 +1,229 @@
+/**************************************************/
+/* PostCSS imports */
+/**************************************************/
+@import "../../node_modules/bulma/css/bulma.css";
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import "../../node_modules/animate.css/animate.css";
+
+/**************************************************/
+/* Resets and General */
+/**************************************************/
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  src: url("./fonts/fa-brands-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  src: url("./fonts/fa-solid-900.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FiraSans-Regular";
+  src: url("./fonts/FiraSans-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "Troika";
+  src: url("./fonts/troika.otf") format("truetype");
+}
+.container {
+  max-width: 900px !important;
+}
+@media screen and (max-width: 769px) {
+  .columns.is-reverse-order-touch {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+}
+.button.is-google-badge {
+  padding: 0;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: 0 .25rem .5rem rgba(0,0,0,.15);
+}
+.button.is-google-badge img {
+  width: 11rem;
+  height: auto;
+}
+
+/**************************************************/
+/* Typography */
+/**************************************************/
+html {
+  font-size: 16px;
+}
+html * {
+  font-family: "FiraSans-Regular", sans-serif;
+}
+.title {
+  font-family: "Troika", sans-serif !important;
+  font-size: 3rem;
+}
+.subtitle {
+  margin-bottom: .25rem !important;
+  font-size: 2rem;
+}
+.bread {
+  font-size: 1.1rem;
+}
+
+/**************************************************/
+/* Hyperlinks */
+/**************************************************/
+a,
+a * {
+  color: #4a4a4a !important;
+}
+a:active,
+a:focus,
+a:focus-within {
+  color: #f24441 !important;
+  transform: translateY(0.0625rem);
+}
+a:active *,
+a:focus *,
+a:focus-within *,
+a:hover * {
+  color: #f24441 !important;
+}
+
+/**************************************************/
+/* Navigation */
+/**************************************************/
+body {
+  padding-top: 5.25rem;
+}
+.navbar {
+  padding: 1rem;
+  box-shadow: 0 .25rem .5rem rgba(0,0,0,.15);
+}
+@media screen and (max-width: 1023px) {
+  .navbar { padding: 1rem 0 !important; }
+  .navbar-menu { box-shadow: none; }
+  .navbar-dropdown { padding: 0; font-size: 1rem; }
+  .navbar-dropdown .navbar-item { padding: .5rem .75rem; }
+}
+.navbar .navbar-brand .navbar-item {
+  font-weight: bold;
+}
+.navbar .navbar-brand .firstname {
+  font-weight: lighter;
+  color: #f24441 !important;
+}
+
+/**************************************************/
+/* Hero content */
+/**************************************************/
+.hero#superpong:not(.is-white) {
+  background-image: linear-gradient(to bottom right, #f24441, #ef6040);
+}
+.hero#flagquizeu:not(.is-white) {
+  background-image: linear-gradient(to bottom right, #0032a8, #01148e);
+}
+.hero#sudoku:not(.is-white) {
+  background-image: linear-gradient(to bottom right, #f76504, #dd891a);
+}
+.hero#emojidoku:not(.is-white) {
+  background-image: linear-gradient(to bottom right, #0c75ff, #2660ff);
+}
+.hero#flappyblock:not(.is-white) {
+  background-image: linear-gradient(to bottom right, #ff2672, #fc3f64);
+}
+@media screen and (min-width: 1024px) {
+  .hero .hero-body .columns .column:last-child.is-two-thirds .app-info {
+    padding-left: 6rem;
+  }
+  .hero .hero-body .columns .column:first-child.is-two-thirds .app-info {
+    padding-right: 6rem;
+  }
+}
+.hero .hero-body .app-preview img {
+  height: auto;
+  width: 100%;
+}
+.hero.first-hero {
+  margin-bottom: 4rem;
+  position: relative;
+}
+.hero.first-hero #particlesjs-canvas {
+  opacity: .5;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero.first-hero .middle-box {
+  z-index: 2;
+}
+.hero.first-hero .middle-box-inner {
+  min-height: 8rem;
+  height: 8rem;
+  position: relative;
+  top: 0;
+  transform: translateY(50%);
+  box-shadow: 0 .25rem .5rem rgba(0,0,0,.15);
+}
+.hero.first-hero .middle-box-inner .some-links {
+  height: 100%;
+}
+.hero.first-hero .middle-box-inner .some-links .some-link-google-play .google-play-svg-icon {
+  height: 2rem;
+  width: auto;
+}
+.hero.first-hero .middle-box-inner .some-links .some-link-github * {
+  color: #1b1f23 !important;
+}
+.hero.first-hero .middle-box-inner .some-links .some-link-linked-in * {
+  color: #007bb5 !important;
+}
+.hero.first-hero .middle-box-inner .some-links .some-link-facebook * {
+  color: #3b5998 !important;
+}
+.hero.first-hero .middle-box-inner .some-links .some-link-twitter * {
+  color: #28aae1 !important;
+}
+
+/**************************************************/
+/* Content dividers */
+/**************************************************/
+.svg-divider-top {
+  position: relative;
+  height: 3vw;
+  z-index: 1
+}
+.svg-divider-top::after {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#ffffff" preserveAspectRatio="none"%3E%3Cpolygon points="0,0 100,0 100,100" /%3E%3C/svg%3E");
+  background-position: center center;  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: "";
+  height: 3vw;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.svg-divider-bottom {
+  position: relative;
+  height: 3vw;
+  z-index: 1
+}
+.svg-divider-bottom::after {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#ffffff" preserveAspectRatio="none"%3E%3Cpolygon points="100,100 100,0 0,100" /%3E%3C/svg%3E");
+  background-position: center center;  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: "";
+  height: 3vw;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.footer.has-divider {
+  padding: 0;
+}
+.footer.has-divider .footer-content {
+  padding: 3rem 1.5rem 4rem;
+}

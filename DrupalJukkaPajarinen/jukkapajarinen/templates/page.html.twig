@@ -1,0 +1,129 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="jp-main-navigation">
+  <div class="container">
+    <div class="w-100">
+      <a class="navbar-brand float-left" href="/">
+        <span class="brand-first">Jukka</span>
+        <span class="brand-last">Pajarinen</span>
+      </a>
+      <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target=".dual-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 dual-collapse" id="jp-navbar-first-collapse">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Etusivu</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/referenssit">Referenssit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.lumitum.com" target="_blank">Lumitum Oy<i class="fas fa-external-link-alt"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-collapse collapse w-100 dual-collapse" id="jp-navbar-second-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <select class="custom-select w-auto" id="jp-select-language">
+            <option value="fi" selected>Suomeksi</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="flex-grow-1" id="jp-main-content">
+  <section class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div id="jp-page-title">
+          {{ page.jp_headings }}
+        </div>
+        <div id="jp-page-content">
+          {{ page.content }}
+        </div>
+      </div>
+      <aside class="col-md-4" id="jp-page-sidebar">
+        {% if page.jp_sidebar_first %}
+          <div class="sidebar-item">
+            {{ page.jp_sidebar_first }}
+          </div>
+        {% endif %}
+        {% if page.jp_sidebar_second %}
+          <div class="sidebar-item">
+            {{ page.jp_sidebar_second }}
+          </div>
+        {% endif %}
+        {% if page.jp_sidebar_third %}
+          <div class="sidebar-item">
+            {{ page.jp_sidebar_third }}
+          </div>
+        {% endif %}
+        <div class="sidebar-item">
+          <h3 class="text-primary">Ota yhteyttä!</h3>
+          <div class="row">
+            <div class="col-8">
+              <h4>Jukka Pajarinen</h4>
+              <p>Ohjelmistokonsultti, Diplomi-Insinööri, Yrittäjä</p>
+            </div>
+            <div class="col-4">
+              <img src="{{ base_path ~ directory }}/build/images/JukkaProfilePicture.png" alt="" class="img-fluid">
+            </div>
+          </div>
+          <p><a href="mailto:jukka.pajarinen@lumitum.com">jukka.pajarinen@lumitum.com</a></p>
+          <p>Puh. <a href="tel:0407526263">040 7526 263</a></p>
+          <p>
+            <a class="icon-link" href="https://fi.linkedin.com/in/jukkapajarinen" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="icon-link" href="https://github.com/jukkapajarinen" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="icon-link" href="https://play.google.com/store/apps/developer?id=Jukka+Pajarinen" target="_blank"><i class="fab fa-google-play"></i></a>
+            <a class="icon-link" href="https://www.facebook.com/jukka.pajarinen" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a class="icon-link" href="https://twitter.com/pajarinenjukka" target="_blank"><i class="fab fa-twitter"></i></a>
+          </p>
+        </div>
+        <p class="sidebar-extra">
+          <strong>
+            <a href="https://www.lumitum.com">Lumitum Oy<i class="fas fa-external-link-alt"></i></a>
+          </strong>
+        </p>
+      </aside>
+    </div>
+  </section>
+</main>
+<footer class="text-light bg-primary" id="jp-main-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Etusivu</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/referenssit">Referenssit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.lumitum.com">Lumitum Oy<i class="fas fa-external-link-alt"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-4 text-md-right">
+        <select class="custom-select w-auto" id="jp-select-language">
+          <option value="fi" selected>Suomeksi</option>
+        </select>
+      </div>
+    </div>
+    <hr/>
+    <div class="row">
+      <div class="col-md-6">
+        <p>© 2020 Jukka Pajarinen. Kaikki oikeudet pidätetään.</p>
+      </div>
+      <div class="col-md-6 align-self-center text-md-right">
+        <a class="icon-link" href="https://fi.linkedin.com/in/jukkapajarinen" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a class="icon-link" href="https://github.com/jukkapajarinen" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="icon-link" href="https://play.google.com/store/apps/developer?id=Jukka+Pajarinen" target="_blank"><i class="fab fa-google-play"></i></a>
+        <a class="icon-link" href="https://www.facebook.com/jukka.pajarinen" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a class="icon-link" href="https://twitter.com/pajarinenjukka" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>

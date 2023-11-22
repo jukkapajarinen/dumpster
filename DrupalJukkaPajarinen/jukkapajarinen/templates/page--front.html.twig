@@ -1,0 +1,178 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="jp-main-navigation">
+  <div class="container">
+    <div class="w-100">
+      <a class="navbar-brand float-left" href="/">
+        <span class="brand-first">Jukka</span>
+        <span class="brand-last">Pajarinen</span>
+      </a>
+      <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target=".dual-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 dual-collapse" id="jp-navbar-first-collapse">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Etusivu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/referenssit">Referenssit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.lumitum.com" target="_blank">Lumitum Oy<i class="fas fa-external-link-alt"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-collapse collapse w-100 dual-collapse" id="jp-navbar-second-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <select class="custom-select w-auto" id="jp-select-language">
+            <option value="fi" selected>Suomeksi</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="flex-grow-1" id="jp-main-content">
+  <section class="jumbotron" id="jp-hero-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lead">Ohjelmistokonsultti</p>
+          <h1 class="text-primary">Jukka Pajarinen</h1>
+          <p>Ohjelmistokehittäjänä olen intohimoinen ja huolellinen tekijä. Minulla on paljon kokemusta full-stack web-kehityksestä, lievällä front-end-painotuksella. Teen paljon projekteja <a href="https://github.com/jukkapajarinen">GitHubissa</a> ja pyrinkin aina aktiivisesti kehittämään jo vahvaa teknologista osaamistani ohjelmistokehityksen parissa.</p>
+          <p>Verkkosivustoja ja verkkokauppoja olen tehnyt aikaisemmissa työsuhteissa tai freelancerina lähemmäs toistakymmentä. Mobiilikehityksen puolella olen julkaissut kymmenen omaa sovellusta <a href="https://play.google.com/store/apps/developer?id=Jukka+Pajarinen">Google Play -kauppaan</a> ja osallistunut satojen tuhansien käyttäjien Unity-sovelluksen kehittämiseen.</p>
+          <p>Rullaa alaspäin ja lue minusta lisää. <strong>Tervetuloa sivustolleni!</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="jp-services-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-6">
+          <p class="lead">Ohjelmistokehitys, verkkosivustot...</p>
+          <h2 class="text-primary">Olen Sinun apunasi!</h2>
+          <p>Suunnittelen ja toteutan ohjelmistotuotteesi tai osallistun konsultointiapuna projektiisi. Saat minulta laadukasta koodia ja sujuvaa yhteistyötä! Olen ohjelmistotuotannon Diplomi-Insinööri ja pystyn toimimaan laajasti ohjelmistotuotannon eri osa-alueilla.</p>
+          <p>Verkkosivustojen tekninen toteuttaminen kuuluu erityisalaani ja toteutan ne <strong>avaimet käteen -periaatteella</strong> useimmiten noin viikossa, sopimuksen mukaan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="jp-contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>Kiinnostuitko? <span class="text-primary">Hienoa, ollaan yhteydessä!</span></h2>
+          <p class="w-50 mx-auto">Voit käyttää alla olevaa yhteydenottolomaketta, lähettää sähköpostia osoitteeseen: <a href="mailto:jukka.pajarinen@lumitum.com">jukka.pajarinen@lumitum.com</a> tai soittaa numeroon: <a href="tel:0407526263">040 752 6263</a>.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <form>
+                <h3>Yhteydenottolomake</h3>
+                <p>Tähdellä (<span class="text-primary">*</span>) merkityt kentät ovat pakollisia.</p>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="contactName">Nimi</label>
+                      <input type="text" class="form-control" id="contactName" placeholder="Syötä nimi tähän..." disabled>
+                    </div>
+                    <div class="form-group">
+                      <label for="contactEmail">Sähköposti <span class="text-primary">*</span></label>
+                      <input type="email" class="form-control" id="contactEmail" placeholder="Syötä sähköposti tähän..." disabled>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="contactType">Yhteydenottotyyppi</label>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="contactType1" disabled>
+                            <label class="custom-control-label" for="contactType1">Tarvitsen verkkosivuston</label>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="contactType2" disabled>
+                            <label class="custom-control-label" for="contactType2">Tarvitsen mobiilisovelluksen</label>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="contactType3" disabled>
+                            <label class="custom-control-label" for="contactType3">Haluan verkostoitua</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="contactType4" disabled>
+                            <label class="custom-control-label" for="contactType4">Tarvitsen verkkokaupan</label>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="contactType5" disabled>
+                            <label class="custom-control-label" for="contactType5">Tarvitsen asiantuntija-apua</label>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="contactType6" disabled>
+                            <label class="custom-control-label" for="contactType6">Jotain muuta...</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="contactMessage">Kuinka voin auttaa sinua? <span class="text-primary">*</span></label>
+                      <textarea class="form-control" id="contactMessage" rows="6" placeholder="Syötä viestisi tähän..." disabled></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button class="btn btn-primary" disabled>Lähetä</button> 
+                    <i>Lomake ei ole juuri nyt käytössä.</i>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="text-light bg-primary" id="jp-main-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <ul class="nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Etusivu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/referenssit">Referenssit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.lumitum.com">Lumitum Oy<i class="fas fa-external-link-alt"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-4 text-md-right">
+        <select class="custom-select w-auto" id="jp-select-language">
+          <option value="fi" selected>Suomeksi</option>
+        </select>
+      </div>
+    </div>
+    <hr/>
+    <div class="row">
+      <div class="col-md-6">
+        <p>© 2020 Jukka Pajarinen. Kaikki oikeudet pidätetään.</p>
+      </div>
+      <div class="col-md-6 align-self-center text-md-right">
+        <a class="icon-link" href="https://fi.linkedin.com/in/jukkapajarinen" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a class="icon-link" href="https://github.com/jukkapajarinen" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="icon-link" href="https://play.google.com/store/apps/developer?id=Jukka+Pajarinen" target="_blank"><i class="fab fa-google-play"></i></a>
+        <a class="icon-link" href="https://www.facebook.com/jukka.pajarinen" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a class="icon-link" href="https://twitter.com/pajarinenjukka" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>

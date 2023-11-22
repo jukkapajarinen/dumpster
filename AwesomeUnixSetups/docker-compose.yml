@@ -1,0 +1,72 @@
+version: "3.1"
+
+services:
+  mariadb:
+    image: mariadb:10.5
+    container_name: mariadb-service
+    networks:
+      - gotham-city-network
+    ports:
+      - 3306:3306
+    volumes:
+      - $PWD/Database:/docker-entrypoint-initdb.d/
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.0
+    container_name: phpmyadmin-service
+    networks:
+      - gotham-city-network
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: ${DB_HOST}
+      PMA_USER: ${DB_USER}
+      PMA_PASSWORD: ${DB_PASSWORD}
+    depends_on:
+      - mariadb
+
+  batman:
+    build:
+      context: ./Batman
+      dockerfile: Dockerfile
+    container_name: batman-service
+    networks:
+      - gotham-city-network
+    ports:
+      - "80:80"
+    environment:
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DB_DATABASE: ${DB_DATABASE}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      BATMAN_HOST: ${BATMAN_HOST}
+      BATMAN_PORT: ${BATMAN_PORT}
+    depends_on:
+      - mariadb
+
+  robin:
+    build:
+      context: ./Robin
+      dockerfile: Dockerfile
+    container_name: robin-service
+    networks:
+      - gotham-city-network
+    environment:
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DB_DATABASE: ${DB_DATABASE}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+    depends_on:
+      - mariadb
+
+networks:
+  gotham-city-network:
+    driver: bridge

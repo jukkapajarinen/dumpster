@@ -1,0 +1,14 @@
+# OS files
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# WordPress
+wp-plugins/*
+!wp-plugins/hello-plugin/
+wp-themes/*
+!wp-themes/hello-theme/
+!wp-themes/j2-theme/
+
+# Other
+node_modules/

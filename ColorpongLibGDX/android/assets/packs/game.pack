@@ -1,0 +1,194 @@
+game.png
+size: 482, 127
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ball1
+  rotate: false
+  xy: 245, 16
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+ball2
+  rotate: false
+  xy: 268, 16
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+ball3
+  rotate: false
+  xy: 291, 16
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+ball4
+  rotate: false
+  xy: 314, 16
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+ball5
+  rotate: false
+  xy: 337, 16
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+ball6
+  rotate: false
+  xy: 360, 16
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+dashLine
+  rotate: false
+  xy: 1, 11
+  size: 444, 3
+  orig: 444, 3
+  offset: 0, 0
+  index: -1
+hud1
+  rotate: false
+  xy: 236, 82
+  size: 231, 21
+  orig: 231, 21
+  offset: 0, 0
+  index: -1
+hud2
+  rotate: false
+  xy: 236, 105
+  size: 231, 21
+  orig: 231, 21
+  offset: 0, 0
+  index: -1
+item1
+  rotate: false
+  xy: 96, 82
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+item2
+  rotate: false
+  xy: 124, 82
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+item3
+  rotate: false
+  xy: 152, 82
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+item4
+  rotate: false
+  xy: 180, 82
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+item5
+  rotate: false
+  xy: 208, 82
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+item6
+  rotate: false
+  xy: 383, 43
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+item7
+  rotate: false
+  xy: 411, 16
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+item8
+  rotate: false
+  xy: 411, 44
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+item9
+  rotate: false
+  xy: 439, 43
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+logo
+  rotate: false
+  xy: 1, 43
+  size: 380, 37
+  orig: 380, 37
+  offset: 0, 0
+  index: -1
+musicOff
+  rotate: false
+  xy: 32, 82
+  size: 30, 27
+  orig: 30, 27
+  offset: 0, 0
+  index: -1
+musicOn
+  rotate: false
+  xy: 64, 82
+  size: 30, 27
+  orig: 30, 27
+  offset: 0, 0
+  index: -1
+paddle1
+  rotate: false
+  xy: 1, 16
+  size: 120, 25
+  orig: 120, 25
+  offset: 0, 0
+  index: -1
+paddle2
+  rotate: false
+  xy: 123, 16
+  size: 120, 25
+  orig: 120, 25
+  offset: 0, 0
+  index: -1
+questionMark
+  rotate: false
+  xy: 1, 82
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+share
+  rotate: false
+  xy: 447, 11
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+wall1
+  rotate: false
+  xy: 1, 1
+  size: 480, 3
+  orig: 480, 3
+  offset: 0, 0
+  index: -1
+wall2
+  rotate: false
+  xy: 1, 6
+  size: 480, 3
+  orig: 480, 3
+  offset: 0, 0
+  index: -1

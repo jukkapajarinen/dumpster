@@ -1,0 +1,21 @@
+name: Jukka Pajarinen
+type: theme
+base theme: false
+description: Theme for Jukka Pajarinen's Website.
+package: Custom
+version: 1.0.0
+core_version_requirement: 9.x
+logo: build/favicon.png
+
+libraries:
+  - jukkapajarinen/build
+
+regions:
+  jp_header: "Header Navigation"
+  jp_frontcard: "Front-page Card"
+  content: "Main Content"
+  jp_headings: "Main Headings"
+  jp_sidebar_first: "Sidebar First"
+  jp_sidebar_second: "Sidebar Second"
+  jp_sidebar_third: "Sidebar Third"
+  jp_footer: "Footer Navigation"

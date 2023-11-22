@@ -1,0 +1,67 @@
+@page
+@using Batman
+@{
+  MainController mc = new MainController();
+  string[] urls = mc.RandomImageUrlPair();
+}
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Awesome Unix Setups">
+    <meta name="keywords" content="Awesome Unix Setups">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Jukka Pajarinen">
+    <title>Awesome Unix Setups</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/build.css">
+    <script defer src="/build.js" type="text/javascript"></script>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">Awesome Unix Setups</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-collapse" class="collapse navbar-collapse">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="/" data-toggle="collapse" data-target="#navbar-collapse">Compare</a>
+            <a class="nav-item nav-link" href="/leaderboard" data-toggle="collapse" data-target="#navbar-collapse">Leaderboard</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main id="main-content" class="flex-grow-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Which one is hotter?</h1>
+          </div>
+          <div class="col-md-6">
+            <a href="/">
+              <img src="@(urls[0])" alt="Please, refresh the page." class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="/">
+              <img src="@(urls[1])" alt="Please, refresh the page." class="img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer-content" class="bg-primary text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              Open source: <a class="text-light" href="https://github.com/jukkapajarinen" target="_blank">GitHub</a><br>
+              Built by: <a class="text-light" href="https://github.com/jukkapajarinen" target="_blank">Jukka Pajarinen</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

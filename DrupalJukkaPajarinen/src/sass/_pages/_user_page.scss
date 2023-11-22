@@ -1,0 +1,16 @@
+body, body.user-page {
+  #jp-user-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    text-align: center;
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+  }
+}
