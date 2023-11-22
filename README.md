@@ -17,6 +17,8 @@ My useful snippets, templates and cool small programs. Some of these used to be 
 - [Weatherduino](./Weatherduino) 🌦️  Basic Arduino Weather Station
 Hello Gnome Extension starter
 - [HelloGnomeExtension](./HelloGnomeExtension) 🏗️  Basic Gnome Extension starter
+Google Workspace NodeMailer example
+- [GWSNodeMailer](./GWSNodeMailer) 🏗️  Google Workspace NodeMailer example
 
 ## Author
 
