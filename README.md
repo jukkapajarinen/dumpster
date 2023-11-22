@@ -19,6 +19,8 @@ Hello Gnome Extension starter
 - [HelloGnomeExtension](./HelloGnomeExtension) 🏗️  Basic Gnome Extension starter
 Google Workspace NodeMailer example
 - [GWSNodeMailer](./GWSNodeMailer) 🏗️  Google Workspace NodeMailer example
+Hello WebXR starter
+- [HelloWebXR](./HelloWebXR) 🏗️  Basic WebXR starter
 
 ## Author
 

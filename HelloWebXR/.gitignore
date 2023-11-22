@@ -4,7 +4,6 @@
 .Trashes
 
 # Project files
-TODO.md
 .parcel-cache/
 dist/
 node_modules/
