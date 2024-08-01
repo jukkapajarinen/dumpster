@@ -25,6 +25,7 @@ My useful snippets, old un-maintained projects, templates and cool small program
 - [MiTempHumiditySensorV1](./MiTempHumiditySensorV1/getMiData.sh) 🌡️ (Bash script to read data from Mi Temp/Humid V1 Sensor)
 - [MiTempHumiditySensorV2](./MiTempHumiditySensorV2/mi-temperature.js) 🌡️ (Node.js script to read data from Mi Temp/Humid V2 Sensor)
 - [PajarisetAlttarilla](./PajarisetAlttarilla) 🌐 My Wedding webpage from 2020 using Node.js, Express, Gulp, Bootstrap and jQuery.
+- [PHPSortMMYYYY](./PHP-sort-mmyyyy) 🐘 PHP sorting for MM/YYYY dates.
 - [PortfolioBulmaLander](./PortfolioBulmaLander) 🌐 My portfolio page from 2020 using Bulma, Gulp etc.
 - [PortfolioJqueryHbs](./PortfolioJqueryHbs) 🌐 My portfolio page from 2018 using WebPack, jQuery and handlebars.
 - [PortfolioReactJsx](./PortfolioReactJsx) 🌐 My portfolio page from 2018 using WebPack, React and JSX.
