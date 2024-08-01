@@ -1,0 +1,100 @@
+/**************************************************/
+/* Dependencies and base theme imports */
+/**************************************************/
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import "./custom.scss";
+
+/**************************************************/
+/* Fonts and resets */
+/**************************************************/
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  src: url("../webfonts/fa-brands-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  src: url("../webfonts/fa-solid-900.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrainsMono-ExtraBold";
+  src: url("../webfonts/JetBrainsMono-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrainsMono-Regular";
+  src: url("../webfonts/JetBrainsMono-Regular.ttf") format("truetype");
+}
+
+/**************************************************/
+/* Other customizations */
+/**************************************************/
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "JetBrainsMono-Regular", sans-serif;
+    font-weight: 400;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "JetBrainsMono-ExtraBold", sans-serif;
+      font-weight: 600;
+      margin-bottom: 1rem !important;
+      color: #bdff00 !important;
+    }
+
+    h1.navbar-brand {
+      border-left: 0.25rem solid #bdff00;
+      padding-left: 1.5rem;
+      margin-bottom: 0 !important;
+    }
+
+    #paper {
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+      background: #181c2c !important;
+    }
+
+    @media (min-width: 768px) {
+      #paper {
+        padding: 5rem !important;
+        margin-top: 5rem !important;
+        margin-bottom: 5rem !important;
+        border-radius: 0.5rem;
+      }
+    }
+
+    @media print {
+      background: none !important;
+      color: #181c2c !important;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: #18b6ff !important;
+      }
+
+      h1.navbar-brand {
+        border-color: #18b6ff !important;
+        color: #181c2c !important;
+      }
+
+      .text-primary {
+        color: #18b6ff !important;
+      }
+    }
+  }
+}

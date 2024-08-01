@@ -1,0 +1,104 @@
+/**************************************************/
+/* Custom theme based on Bootstrap 5 */
+/**************************************************/
+
+// Import bootstrap functions
+@import "../node_modules/bootstrap/scss/functions";
+
+// Customize bootstrap variables
+$body-bg: #121521;
+$body-color: #fbe8e9;
+$border-color: #1b242a;
+$primary: #bdff00;
+$secondary: #20323e;
+$success: #388e3c;
+$info: #141e25;
+$warning: #18b6ff;
+$danger: #c62828;
+$light: #fbe8e9;
+$dark: #141e25;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+
+$link-color: $warning;
+$link-hover-color: shade-color($warning, 20%);
+$input-border-color: $border-color;
+$pagination-border-color: $border-color;
+$table-border-color: $border-color;
+$nav-tabs-border-color: $border-color;
+$nav-tabs-link-active-border-color: $border-color;
+$nav-tabs-link-hover-border-color: $border-color;
+$input-color: $body-color;
+$input-focus-color: $body-color;
+$table-color: $body-color;
+$table-hover-color: shade-color($body-color, 20%);
+$list-group-color: $body-color;
+$nav-tabs-link-active-color: $body-color;
+$card-bg: $secondary;
+$pagination-bg: $secondary;
+$modal-content-bg: $secondary;
+$dropdown-bg: $secondary;
+$list-group-bg: $secondary;
+$list-group-active-bg: $primary;
+$list-group-active-border-color: $primary;
+$input-bg: $secondary;
+$input-focus-bg: shade-color($secondary, 20%);
+$nav-pills-link-active-bg: $secondary;
+$nav-tabs-link-active-bg: $secondary;
+$nav-link-color: $primary;
+$nav-link-hover-color: shade-color($primary, 20%);
+$progress-bg: $secondary;
+$progress-bar-bg: $primary;
+$progress-bar-color: $body-color;
+$pagination-color: $body-color;
+$badge-color: $body-color;
+
+// Import rest of bootstrap
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/accordion";
+@import "../node_modules/bootstrap/scss/breadcrumb";
+@import "../node_modules/bootstrap/scss/pagination";
+@import "../node_modules/bootstrap/scss/badge";
+@import "../node_modules/bootstrap/scss/alert";
+@import "../node_modules/bootstrap/scss/progress";
+@import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/toasts";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/tooltip";
+@import "../node_modules/bootstrap/scss/popover";
+@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/spinners";
+@import "../node_modules/bootstrap/scss/offcanvas";
+@import "../node_modules/bootstrap/scss/placeholders";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";

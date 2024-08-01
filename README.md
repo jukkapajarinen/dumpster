@@ -22,6 +22,7 @@ My useful snippets, old un-maintained projects, templates and cool small program
 - [HelloGnomeExtension](./HelloGnomeExtension) 🐧 Basic Gnome Extension starter
 - [HelloWebXR](./HelloWebXR) 🕶️ Hello WebXR starter
 - [HSLColorUtilityForHEX](./HSLColorUtilityForHEX) 🎨 HSL Color Utility For HEX
+- [jukkapajarinen-gulp](./jukkapajarinen-gulp) 🥤 Personal Gulp static website (old)
 - [MiTempHumiditySensorV1](./MiTempHumiditySensorV1/getMiData.sh) 🌡️ (Bash script to read data from Mi Temp/Humid V1 Sensor)
 - [MiTempHumiditySensorV2](./MiTempHumiditySensorV2/mi-temperature.js) 🌡️ (Node.js script to read data from Mi Temp/Humid V2 Sensor)
 - [PajarisetAlttarilla](./PajarisetAlttarilla) 🌐 My Wedding webpage from 2020 using Node.js, Express, Gulp, Bootstrap and jQuery.
