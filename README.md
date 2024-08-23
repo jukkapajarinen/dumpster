@@ -30,6 +30,7 @@ My useful snippets, old un-maintained projects, templates and cool small program
 - [PortfolioBulmaLander](./PortfolioBulmaLander) 🌐 My portfolio page from 2020 using Bulma, Gulp etc.
 - [PortfolioJqueryHbs](./PortfolioJqueryHbs) 🌐 My portfolio page from 2018 using WebPack, jQuery and handlebars.
 - [PortfolioReactJsx](./PortfolioReactJsx) 🌐 My portfolio page from 2018 using WebPack, React and JSX.
+- [SymbolPulse](./SymbolPulse) 🌐 Track candlestick charts and financial data for symbols. Angular app built with TailwindCSS and JSCharting, using TwelveData API.
 - [Tutorials](./Tutorials) 📜 My personal follow-ups for various programming tutorials.
 - [Weatherduino](./Weatherduino) 🌦️ Basic Arduino Weather Station
 - [WordPressDocker-compose](./WordpressDockerCompose) 🕸️ WordPress docker-compose starter

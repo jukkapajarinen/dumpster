@@ -1,0 +1,142 @@
+<div class="container mx-auto rounded-md text-gray-800">
+  <h2 class="mb-3 text-2xl font-semibold leadi">{{ pageTitle }}</h2>
+  <div>
+    <div *ngIf="allSymbols.length === 0" class="inline-flex">
+      <svg
+        class="animate-spin -ml-1 mr-3 h-5 w-5 text-violet-800"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle
+          class="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          stroke-width="4"
+        ></circle>
+        <path
+          class="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+        ></path>
+      </svg>
+      Processing...
+    </div>
+
+    <div *ngIf="allSymbols.length > 0">
+      <table class="min-w-full text-xs">
+        <thead class="rounded-t-lg bg-gray-300">
+          <tr class="text-right">
+            <th class="p-3 text-left">Select</th>
+            <th class="p-3 text-left" *ngFor="let heading of headings">
+              {{ heading | titlecase }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="text-right border-b border-opacity-20 border-gray-300 bg-gray-100"
+            *ngFor="let symbol of displayedSymbols"
+          >
+            <td class="px-3 py-2 text-left">
+              <input
+                type="checkbox"
+                [checked]="isSymbolSelected(symbol)"
+                (change)="toggleSelect(symbol)"
+              />
+            </td>
+            <td class="px-3 py-2 text-left" *ngFor="let heading of headings">
+              {{ symbol[heading.toLowerCase()] }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="flex justify-between mt-2">
+        <fieldset class="w-full space-y-1 text-gray-800">
+          <label for="Search" class="hidden">Search</label>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+              <button
+                type="button"
+                title="search"
+                disabled
+                class="p-1 focus:outline-none focus:ring"
+              >
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 512 512"
+                  class="w-4 h-4 text-gray-800"
+                >
+                  <path
+                    d="M479.6,399.716l-81.084-81.084-62.368-25.767A175.014,175.014,0,0,0,368,192c0-97.047-78.953-176-176-176S16,94.953,16,192,94.953,368,192,368a175.034,175.034,0,0,0,101.619-32.377l25.7,62.2L400.4,478.911a56,56,0,1,0,79.2-79.195ZM48,192c0-79.4,64.6-144,144-144s144,64.6,144,144S271.4,336,192,336,48,271.4,48,192ZM456.971,456.284a24.028,24.028,0,0,1-33.942,0l-76.572-76.572-23.894-57.835L380.4,345.771l76.573,76.572A24.028,24.028,0,0,1,456.971,456.284Z"
+                  ></path>
+                </svg>
+              </button>
+            </span>
+            <input
+              type="search"
+              name="Search"
+              placeholder="Search..."
+              disabled
+              class="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none bg-gray-100 text-gray-800 focus:bg-gray-50 focus:border-violet-600"
+            />
+          </div>
+        </fieldset>
+        <nav
+          *ngIf="pageCount > 1"
+          aria-label="Pagination"
+          class="inline-flex -space-x-px rounded-md shadow-sm bg-gray-100 text-gray-800"
+        >
+          <button
+            type="button"
+            aria-current="page"
+            (click)="goToPage(1)"
+            [disabled]="currentPage === 1"
+            class="inline-flex items-center px-2 py-2 text-sm font-semibold border rounded-l-md border-gray-300 {{
+              currentPage === 1 ? 'text-gray-400' : ''
+            }}"
+          >
+            First
+          </button>
+          <button
+            type="button"
+            (click)="goToPage(currentPage - 1)"
+            [disabled]="currentPage === 1"
+            class="inline-flex items-center px-4 py-2 text-sm font-semibold border border-gray-300 {{
+              currentPage === 1 ? 'text-gray-400' : ''
+            }}"
+          >
+            Previous
+          </button>
+          <div
+            class="inline-flex items-center px-4 py-2 text-sm border border-gray-300"
+          >
+            Page&nbsp;{{ currentPage }}&nbsp;of&nbsp;{{ pageCount }}
+          </div>
+          <button
+            type="button"
+            (click)="goToPage(currentPage + 1)"
+            [disabled]="currentPage === pageCount"
+            class="inline-flex items-center px-4 py-2 text-sm font-semibold border border-gray-300 {{
+              currentPage === pageCount ? 'text-gray-400' : ''
+            }}"
+          >
+            Next
+          </button>
+          <button
+            type="button"
+            (click)="goToPage(pageCount)"
+            [disabled]="currentPage === pageCount"
+            class="inline-flex items-center px-2 py-2 text-sm font-semibold border rounded-r-md border-gray-300 {{
+              currentPage === pageCount ? 'text-gray-400' : ''
+            }}"
+          >
+            Last
+          </button>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
