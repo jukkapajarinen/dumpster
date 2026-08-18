@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<title>Suomen postinumerot</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link href="tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900" style="background: #ffffff; background-image: radial-gradient(#7c7c7c47 1px, #ffffff 1px); background-size: 12px 12px;">
+<div class="max-w-screen-2xl mx-auto p-8">
+<div class="flex items-center gap-3 mb-8">
+  <img src="favicon.ico" alt="" class="w-8 h-8">
+  <h1 class="text-2xl font-semibold">
+    <a href="">Suomen postinumerot</a>
+  </h1>
+</div>
+
+<p class="mb-2 text-gray-700">
+Hae postinumeroa:
+</p>
+
+<div class="flex gap-2 mb-6">
+
+<input type="number" maxlength="1"
+class="digit w-12 h-12 text-xl text-center font-mono border border-gray-400 bg-blue-100 focus:bg-blue-200 focus:outline-none">
+
+<input type="number" maxlength="1"
+class="digit w-12 h-12 text-xl text-center font-mono border border-gray-400 bg-green-100 focus:bg-green-200 focus:outline-none">
+
+<input type="number" maxlength="1"
+class="digit w-12 h-12 text-xl text-center font-mono border border-gray-400 bg-yellow-100 focus:bg-yellow-200 focus:outline-none">
+
+<input type="number" maxlength="1"
+class="digit w-12 h-12 text-xl text-center font-mono border border-gray-400 bg-pink-100 focus:bg-pink-200 focus:outline-none">
+
+<input type="number" maxlength="1"
+class="digit w-12 h-12 text-xl text-center font-mono border border-gray-400 bg-purple-100 focus:bg-purple-200 focus:outline-none">
+
+</div>
+
+<p class="mb-2 text-gray-700">
+Tai hae postitoimipaikkaa:
+</p>
+
+<input type="search"
+placeholder="Postitoimipaikka..."
+class="w-full h-10 px-3 text-base border border-gray-400 bg-white focus:bg-gray-100 mb-8 focus:outline-none">
+
+<div class="border border-gray-300">
+
+<ol id="resultList"></ol>
+
+</div>
+
+<div class="text-sm text-gray-600 mt-8">
+Haun toteutus: Jukka Pajarinen
+</div>
+
+<div class="text-sm text-gray-600">
+<a class="text-blue-800 hover:underline" href="https://www.jukkapajarinen.com" target="_blank">www.jukkapajarinen.com</a>
+<span class="mx-2">|</span>
+<a class="text-blue-800 hover:underline" href="https://www.lumitum.com" target="_blank">www.lumitum.com</a>
+</div>
+
+</div>
+
+<script>
+
+const prefix = "PONOT20260221";
+
+const digitInputs = document.querySelectorAll('.digit');
+const searchInput = document.querySelector('input[type="search"]');
+const list = document.getElementById("resultList");
+
+let postalData = [];
+
+fetch("PCF_20260221.dat")
+.then(response => response.arrayBuffer())
+.then(buffer => {
+
+const decoder = new TextDecoder("iso-8859-1");
+const text = decoder.decode(buffer);
+
+const lines = text.split(/\r?\n/);
+
+lines.forEach(line => {
+
+if (!line.startsWith(prefix)) return;
+
+const afterPrefix = line.substring(prefix.length);
+const value = afterPrefix.split(" ")[0];
+
+if (!value) return;
+
+const postalCode = value.substring(0,5);
+const name = value.substring(5).trim();
+
+postalData.push({ postalCode, name });
+
+});
+
+renderList(postalData);
+
+});
+
+digitInputs.forEach((input, index) => {
+
+input.addEventListener("input", () => {
+
+input.value = input.value.replace(/[^0-9]/g,"").slice(0,1);
+
+if (input.value && index < digitInputs.length - 1)
+digitInputs[index+1].focus();
+
+filterResults();
+
+});
+
+input.addEventListener("keydown", (e) => {
+
+if (e.key === "Backspace" && !input.value && index > 0)
+digitInputs[index-1].focus();
+
+});
+
+});
+
+searchInput.addEventListener("input", filterResults);
+
+function filterResults(){
+
+const digits = Array.from(digitInputs).map(i => i.value);
+const nameFilter = searchInput.value.toLowerCase().trim();
+
+const filtered = postalData.filter(item => {
+
+const matchDigits = digits.every((digit,index)=>{
+
+if(!digit) return true;
+return item.postalCode[index] === digit;
+
+});
+
+const matchName = nameFilter
+? item.name.toLowerCase().includes(nameFilter)
+: true;
+
+return matchDigits && matchName;
+
+});
+
+renderList(filtered);
+
+}
+
+function renderList(data){
+
+list.innerHTML = "";
+
+data.forEach(item => {
+
+const li = document.createElement("li");
+
+li.className =
+"flex gap-4 px-3 py-2 border-t border-gray-200 cursor-pointer bg-white hover:bg-blue-50";
+
+const code = document.createElement("span");
+
+code.className = "font-mono";
+
+const colors = [
+"text-blue-600",
+"text-green-600",
+"text-yellow-600",
+"text-pink-600",
+"text-purple-600"
+];
+
+item.postalCode.split("").forEach((digit,index)=>{
+
+const span = document.createElement("span");
+
+span.className = colors[index];
+
+span.textContent = digit;
+
+code.appendChild(span);
+
+});
+
+const name = document.createElement("span");
+
+name.textContent = item.name;
+
+li.appendChild(code);
+li.appendChild(name);
+
+li.addEventListener("click", () => {
+
+const digits = item.postalCode.split("");
+
+digitInputs.forEach((input,index)=>{
+input.value = digits[index] || "";
+});
+
+searchInput.value = item.name;
+
+filterResults();
+
+});
+
+list.appendChild(li);
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
